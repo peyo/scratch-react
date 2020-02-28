@@ -5,7 +5,7 @@ class Admins extends React.Component {
     return (
       <section className="admins">
         <div className="yodel-lay-hee-who">
-          Hello Admin. Yodel lay hee who!
+          Hello Admin.<br /><br />Yodel lay hee who!
         </div>
       </section>
     );

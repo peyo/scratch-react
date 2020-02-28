@@ -1,4 +1,23 @@
-.main {
-  background-color: slategray;
-  color: rgb(209, 123, 209);
+.welcome {
+  margin: 12% 12% 3% 12%;
+}
+
+.questions {
+  margin: 3% 12% 3% 12%;
+}
+
+.users {
+  margin: 12% 12% 3% 12%;
+}
+
+.active {
+  margin: 12% 12% 3% 12%;
+}
+
+.admins {
+  margin: 12% 12% 3% 12%;
+}
+
+.links:active, .links:visited, .links:hover {
+  color: rgb(223, 223, 223);
 }

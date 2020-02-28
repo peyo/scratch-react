@@ -1,5 +1,6 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import Home from "./Home";
 import Active from "./Active";
 import Users from "./Users";
 import Admins from "./Admins";
@@ -10,14 +11,20 @@ class AppWorlds extends React.Component {
     return (
       <section className="main">
         <main>
-          <Route
-            exact path="/active"
-            component={Active}
-          />
-          <Route
-            path="/active/users"
-            component={Users}
-          />
+          <Switch>
+            <Route
+              exact path="/"
+              component={Home}
+            />
+            <Route
+              path="/users/active"
+              component={Active}
+            />
+            <Route
+              exact path="/users"
+              component={Users}
+            />
+          </Switch>
           <Route
             path="/admins"
             component={Admins}
