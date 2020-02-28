@@ -1,7 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 class Users extends React.Component {
+  handleClick() {
+    this.props.history.push("/");
+  }
+
   render() {
     return (
       <section className="users">
@@ -14,9 +18,16 @@ class Users extends React.Component {
         >
           Active Users, click here.
         </Link>
+        <br /><br />
+        <button
+          type="button"
+          onClick={() => this.handleClick()}
+        >
+          Go back
+        </button>
       </section>
     );
   }
 }
 
-export default Users;
+export default withRouter(Users);
